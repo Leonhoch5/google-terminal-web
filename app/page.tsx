@@ -1,9 +1,43 @@
 "use client";
 import { useEffect, useState } from "react";
 
+const orpheus = String.raw`
+                                                @@@#+======**%@@
+                                             @@#-.           ..:*@@
+                                         @@%=.                    :#@@@
+                                       @@*:                         .:*@@
+                                      @@:                              .+@@
+                                     @@:                                 :#@
+                                    @%:                                    =@@
+                                    @+.                                    .-%
+                                   @+                                   .....:@
+                                  @*                      :**++++=     ++-----*@
+                                 @#.                      ==.                  @@
+                                @%-                                            *@
+                                @=                                             =@
+                               @*                                              -@
+                              @#                  ...                          -@
+                             @#.                  .+=.                         -@
+                             %:                    :#-                        :@@
+                            @-                      :%*.                    .*@@
+                           @=                       .%@%=                .-*%@
+                          @#.                   .=-:#@  @@%+.        :=#%@@
+                         @%-                  .+*- :*@@@     @@@@@@@@
+                         @*                 .+@*      .*@                  @@@@@
+                         @-               :#*-.+#-    .*@            @@@@@#+%=.=@@
+                        @=              -%+       -++#@@@@@@@@@@@%++:      :*.  -%
+                       @*            .+%=.        .+%*=-.                  .*-  -%
+                      @+.          :*#:        .+%*::.                      -%-.*@
+                      %.        .-%#        .:#@*.                       ...-#@@@
+                    @@-      .:+%=.      .=#*-.#                    :-=##@@@@
+                     +     -%#-.     :+#*-:   +=             .-*#%%@@@
+                               ..=#@*:                .-++@@@@
+                             @@@@@
+`;
+
 const results = [
   { name: "The github repo", URL: "https://github.com/Leonhoch5/google-terminal" },
-  { name: "Download? - EXE", URL: "https://google-terminal.qoig.dev/google-terminal.exe" },
+  { name: "Download? - EXE", URL: "https://cdn.hackclub.com/019fd6ee-d400-7989-9823-7162e4e16a14/google-terminal.exe" },
   { name: "Leon - the one who made this <3 /me", URL: "https://qoig.dev" },
   { name: "Stardance - for what this was made", URL: "https://stardance.hackclub.com" },
   { name: "Hackclub - the origin of stardance", URL: "https://hackclub.com" }
@@ -41,6 +75,11 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black p-4">
       <div className="min-h-[calc(100vh-2rem)] rounded-md border-2 border-violet-600 p-8">
+        <div className="absolute top-48 right-20 w-180">
+          <pre className="overflow-hidden font-mono text-[14px] leading-3.5 whitespace-pre text-gray-500">
+              {orpheus}
+          </pre>
+        </div>
         <div className="inline-block bg-violet-600 px-6 py-2">
           <h1 className="font-mono text-3xl font-bold text-white">
             Google? No, duckduckgo.
