@@ -77,7 +77,7 @@ export default function Home() {
       <div className="min-h-[calc(100vh-2rem)] rounded-md border-2 border-violet-600 p-8">
         <div className="absolute top-48 right-20 w-180">
           <pre className="overflow-hidden font-mono text-[14px] leading-3.5 whitespace-pre text-gray-500">
-              {orpheus}
+            {orpheus}
           </pre>
         </div>
         <div className="inline-block bg-violet-600 px-6 py-2">
